@@ -2,58 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>🎉 100$ Free Taco Bell Gift Card!</title>
+    <title>🎉 Claim Your $100 Taco Bell Gift Card!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #fefefe;
+            background-color: #fdfdfd;
             text-align: center;
-            padding-top: 100px;
+            padding: 30px;
             color: #333;
         }
         .card {
             background: #fff8e1;
             padding: 30px;
-            border-radius: 15px;
+            border-radius: 12px;
             display: inline-block;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            max-width: 400px;
         }
         h1 {
             color: #d84315;
         }
-        .countdown {
-            font-size: 50px;
+        p {
+            font-size: 18px;
             margin: 20px 0;
-            color: #388e3c;
         }
-        .small {
-            font-size: 16px;
-            color: #666;
+        .cta {
+            background: #43a047;
+            color: #fff;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 20px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background: #388e3c;
         }
     </style>
 </head>
 <body>
 
 <div class="card">
-    <h1>🎉 Congratulations!</h1>
-    <p>You’re about to claim your <strong>$100 Free Taco Bell Gift Card!</strong></p>
-    <p class="small">Please wait while we prepare your reward…</p>
-    <div class="countdown" id="counter">5</div>
-    <p class="small">Redirecting you shortly…</p>
+    <h1>🎉 $100 Taco Bell Gift Card!</h1>
+    <p>Want to claim your free Taco Bell gift card? Don’t miss this exclusive limited-time offer available today only!</p>
+    <p>Click below and see if you're eligible 👇</p>
+    <a class="cta" href="https://smrturl.co/a/s7ffaa062bc/91?s1=" rel="noreferrer">Claim Now</a>
 </div>
-
-<script>
-    let count = 5;
-    const interval = setInterval(() => {
-        count--;
-        document.getElementById("counter").innerText = count;
-        if(count === 0) {
-            clearInterval(interval);
-            window.location.href = "https://smrturl.co/a/s7ffaa062bc/91?s1="; // your CPA offer link here
-        }
-    }, 1000);
-</script>
 
 </body>
 </html>
