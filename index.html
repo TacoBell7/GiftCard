@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🎉 100$ Free Taco Bell Gift Card!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fefefe;
+            text-align: center;
+            padding-top: 100px;
+            color: #333;
+        }
+        .card {
+            background: #fff8e1;
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #d84315;
+        }
+        .countdown {
+            font-size: 50px;
+            margin: 20px 0;
+            color: #388e3c;
+        }
+        .small {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🎉 Congratulations!</h1>
+    <p>You’re about to claim your <strong>$100 Free Taco Bell Gift Card!</strong></p>
+    <p class="small">Please wait while we prepare your reward…</p>
+    <div class="countdown" id="counter">5</div>
+    <p class="small">Redirecting you shortly…</p>
+</div>
+
+<script>
+    let count = 5;
+    const interval = setInterval(() => {
+        count--;
+        document.getElementById("counter").innerText = count;
+        if(count === 0) {
+            clearInterval(interval);
+            window.location.href = "https://smrturl.co/a/s7ffaa062bc/91?s1="; // your CPA offer link here
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
